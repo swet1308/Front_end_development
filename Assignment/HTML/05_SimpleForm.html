@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <form>
+        <div>
+            <label form="">Firstname</label> &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text"  placeholder="emter your name" required pattern="[A-Za-z]{3,8}">
+        </div>
+        <br>
+        <div>
+            <label>Middlename</label>&nbsp;
+            <input type="text"  required>
+        </div>
+        <br>
+        <div>
+            <label>Lastname</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" required>
+        </div>
+        <br>
+        <div>
+            <label>Course</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;
+            <select required>
+                <option hidden>Select Course</option>
+                <option>Front-End-Development</option>
+                <option>Back-End-Development</option>
+                <option>Web-Development</option>
+                <option>UI/UX Designing</option>
+                <option>PHP</option>
+                <option>Java</option>
+            </select>
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div>
+            <label>Gender</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div><input type="radio" name="GENDER"> MALE</div>
+            <DIV><input type="radio" name="GENDER"> FEMALE</div>
+            <DIV><input type="radio" name="GENDER"> OTHER</div>
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <DIV>
+            <label>PHONE :</label>
+            <select required>
+                <option hidden>CODE</option>
+                <option selected>+91</option>
+                <option>+254</option>
+                <option>+99</option>
+                <option>+00</option>
+            </select>
+            <input type="tel">
+        </DIV>
+        &nbsp;&nbsp;&nbsp;
+        <DIV>
+            <label>Address</label>
+            <textarea rows="5" cols="20"></textarea>
+        </DIV>
+        &nbsp;&nbsp;&nbsp;
+        <DIV>
+            <LABel>E-MAIL :</LABel>
+            <input type="email">
+        </DIV>
+        &nbsp;&nbsp;&nbsp;
+        <div>
+            <label>Password</label>
+            <input type="password">
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div>
+            <label>Confirm Password</label>
+            <input type="password">
+        </div>
+        &nbsp;&nbsp;&nbsp;<br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+    
+</body>
+</html>
