@@ -9,29 +9,31 @@
     <h1>REGISTRATION FORM</h1>
     <form>
         <div>
-            <label>Firstname</label> &nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="text">
+            <label form="">Firstname</label> &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text"  placeholder="emter your name" required pattern="[A-Za-z]{3,8}">
         </div>
         <br>
         <div>
             <label>Middlename</label>&nbsp;
-            <input type="text">
+            <input type="text"  required>
         </div>
         <br>
         <div>
             <label>Lastname</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="text">
+            <input type="text" required>
         </div>
         <br>
         <div>
             <label>Course</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;
-            <select>
+            <select required>
                 <option hidden>Select Course</option>
                 <option>Front-End-Development</option>
                 <option>Back-End-Development</option>
                 <option>Web-Development</option>
                 <option>UI/UX Designing</option>
+                <option>PHP</option>
+                <option>Java</option>
             </select>
         </div>
         &nbsp;&nbsp;&nbsp;
@@ -44,7 +46,7 @@
         &nbsp;&nbsp;&nbsp;
         <DIV>
             <label>PHONE :</label>
-            <select>
+            <select required>
                 <option hidden>CODE</option>
                 <option selected>+91</option>
                 <option>+254</option>
@@ -56,7 +58,7 @@
         &nbsp;&nbsp;&nbsp;
         <DIV>
             <label>Address</label>
-            <textarea rows="5" cols="30"></textarea>
+            <textarea rows="5" cols="20"></textarea>
         </DIV>
         &nbsp;&nbsp;&nbsp;
         <DIV>
