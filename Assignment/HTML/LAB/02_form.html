@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form action="">
+        <div>
+            <label for="">Full name</label>
+            <input type="text" required pattern="[A-Za-z]{3,8}">
+            
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        
+        &nbsp;&nbsp;&nbsp;
+       
+        &nbsp;&nbsp;&nbsp;
+        <div>
+            <label for="">Course:</label>
+            <select name="" id="">
+                <option value="">IT</option>
+                <option value="">Event Management</option>
+                <option value="">Nursing</option>
+                <option value="">BBA</option>
+            </select>
+        </div>
+        &nbsp;&nbsp;&nbsp;
+       
+        &nbsp;&nbsp;&nbsp;
+        <div>
+            <label for="">Phone:</label>
+            <select>
+                <option value="">+91</option> 
+                <option>+1</option>
+            </select>
+            <input type="tel" required pattern="[6789][0-9]{9}" maxlength="10">
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div>
+            <div><label for="">Message:</label></div>
+            <textarea name="" cols="35" rows="5"></textarea>
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div>
+            <label for="">Email:</label>
+            <input type="text" required pattern="[a-z][0-9+@+[a-z]+.+[a-z]{2-3}$">
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div>
+            <label for="">Password:</label>
+            <input type="password" required pattern="[A-Za-z0-9@]{8,12}">
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div>
+            <label for=""> Re-type Password</label>
+            <input type="password" required pattern="[A-Za-z0-9@]{8,12}">
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+    
+</body>
+</html>
