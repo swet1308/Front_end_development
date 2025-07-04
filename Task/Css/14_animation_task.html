@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task_1</title>
+    <style>
+        * {
+            text-transform: capitalize;
+        }
+
+        .static {
+            height: 100px;
+            width: 200px;
+            margin: 100px auto;
+            background-color: rgb(85, 75, 232);
+            border: none;
+            color: white;
+            word-spacing: 10px;
+            letter-spacing: 5px;
+            font-weight: 600;
+        }
+
+        .static a {
+            text-decoration: none;
+            color: white;
+            
+        }
+
+        .movable {
+            height: 91px;
+            border: 8px solid rgb(87, 75, 232);
+            transform: scale(1);
+            transition: 1s;
+
+        }
+
+        .static:hover .movable {
+
+            transform: scale(1.2);
+            border: 8px solid rgb(87, 75, 232);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static">
+        <a href="">
+            <div class="movable"></div>
+        </a>
+    </div>
+</body>
+
+</html>

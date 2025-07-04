@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 550px;
+            width: 260px;
+            border: 2px solid;
+            box-shadow: 0 0 10px 10px rgba(54, 52, 52, 0.5);
+            margin: 0% auto;
+            position: relative;
+        }
+
+        .photo {
+            height: 276px;
+            width: 260px;
+            transition: 0.5s;
+        }
+
+        .div1:hover .photo {
+            transform: rotateY(180deg);
+        }
+
+        .text {
+            text-align: center;
+            background-color: black;
+            color: white;
+            transform: translateY(-300px);
+            transition: 0.8s;
+            opacity: 0;
+        }
+
+        .div1:hover .text {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+
+        .text:hover {
+            background-color: rgb(62, 8, 224);
+            color: white;
+        }
+
+        .h3 {
+            text-align: center;
+            color: rgb(66, 65, 65);
+        }
+
+        .price {
+            margin-left: 7px;
+            text-align: center;
+            word-spacing: 10px;
+        }
+        .box {
+            height: 30px;
+            width: 100px;
+            margin: 10% 29%;
+            border: 3px solid rgb(19, 17, 20);
+            transition: 0.5s;
+        }
+        .box:hover {
+            transform: scale(1.5);
+        }
+        .btn {
+            height: 30px;
+            width: 100px;
+            margin: 10% auto;
+            background-color: rgb(191, 160, 237);
+            position: absolute;
+            bottom: 48px;
+            left: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1"><img
+                src="https://img1.junaroad.com/uiproducts/21522846/zoom_1-1729882556.jpg"
+                alt="" class="photo"></a>
+            <h1 class="text">Quick View</h1>
+        </div>
+        <div>
+            <h3 class="h3">Party Men's Blazer</h3>
+            <div class="price"><span>$260.99</span> <del>$390.71</del></div>
+            <div class="box"></div>
+            <div class="btn"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

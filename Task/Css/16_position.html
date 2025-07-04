@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position_task</title>
+    <style>
+        .main {
+            height: 300px;
+            width: 300px;
+            
+            margin: 100px auto;
+            background: url(https://img1.junaroad.com/uiproducts/21568424/zoom_1-1728368391.jpg);
+            background-size: 100% 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        .left{
+            height: 300px;
+            width: 500px;
+            
+            background-color: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 100%;
+            right: 100%;
+            transition: .6s;
+        }
+        .main:hover .left{
+            position: absolute;
+            top: 0%;
+            right: 0%;
+        }
+        .right{
+            height: 300px;
+            width: 500px;
+            
+            background-color: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            bottom: 100%;
+            left: 100%;
+            transition: .6s;
+        }
+        .main:hover .right{
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>
