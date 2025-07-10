@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+  margin: 50px;
+}
+
+.card {
+  position: relative;
+  box-shadow: 0 0 10px 0 #c6c3c3;
+  padding: 40px 30px;
+}
+
+h5 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #fd6868;
+  padding: 5px 12px;
+}
+
+h5 a {
+  color: #fff;
+}
+
+.card-img .flip {
+  position: relative;
+  width: 200px;
+  height: 260px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+}
+
+.card-img .flip img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  backface-visibility: hidden;
+}
+
+.card-img .flip .back {
+  transform: rotateY(180deg);
+}
+
+.card:hover .flip {
+  transform: rotateY(180deg);
+}
+
+.card-img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.quick-view {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  padding: 12px 0;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+  transition: bottom 0.45s ease-in-out;
+  transition: 1s;
+  border-radius: 0; /* optional: remove rounded edges */
+}
+
+.quick-view:hover {
+  filter: brightness(1.1);
+  background-color: #2fdab8;
+}
+
+.card:hover .quick-view {
+  bottom: 0;
+}
+
+.card-info {
+  text-align: center;
+  padding: 20px 0;
+}
+
+h3 a {
+  color: #fd6868;
+  /* line-height: 2; */
+}
+
+span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 2;
+}
+
+del {
+  color: #787777;
+  padding: 0 25px;
+}
+
+/* ─── base button ─── */
+.button {
+  position: relative; /* anchor the pseudo‑element */
+  display: inline-block;
+  padding: 14px 60px; /* whatever fits your design */
+  background: #2fdab8; /* turquoise fill */
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none; /* inner border not needed now   */
+  overflow: hidden; /* keeps the animation tidy      */
+  transition: transform 0.25s ease; /* gentle ‘grow’ if you like     */
+}
+
+/* optional: subtle scale on hover */
+.button:hover {
+  transform: scale(1.03);
+}
+
+/* ─── OUTER border ─── */
+.button::after {
+  content: "";
+  position: absolute;
+  inset: -6px; /* negative = sits outside edge  */
+  border: 2px solid #2fdab8; /* same colour as fill           */
+  transform: scaleX(0); /* start hidden (0 % width)      */
+  transform-origin: left center; /* animate from left to right    */
+  transition: transform 0.45s ease;
+}
+
+/* reveal the border */
+.button:hover::after {
+  transform: scaleX(1); /* 100 % width → full rectangle  */
+}
