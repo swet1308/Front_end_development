@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Base Class
+        class A {
+            Name() {
+                console.log("I am  A");
+            }
+        }
+  // Single Inheritance 
+
+        class B extends A {
+
+            Role() {
+
+                console.log("I am  B");
+
+            }
+
+        }
+
+
+
+        // Multilevel Inheritance
+
+        class C extends B {
+
+            show() {
+
+                console.log("I am C of B");
+
+            }
+
+        }
+
+
+
+        // Hybrid Inheritance
+
+        class D extends C {
+
+            Data() {
+
+                console.log("I am  D of C");
+
+            }
+
+        }
+       
+        let i = new D();
+
+        console.log(i)
+
+         i.Name();  
+
+         i.Role();  
+
+         i.show();  
+
+         i.Data();
+
+
+
+ </script>
+
+</body>
+
+
+
+</html>
