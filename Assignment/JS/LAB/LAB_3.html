@@ -1,30 +1,90 @@
+<!-- TASK :-
+    > Add,subtract, multiply, and divide two numbers using arithmetic operators.
+    > Use comparison operators to check if two numbers are equal and if one
+      number is greater than the other.
+    > Use logical operators to check if both conditions (e.g., a > 10 and b < 5) are
+      true.
+
+ 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAB_3</title>
+    <title>TASK-3</title>
 </head>
 <body>
     <script>
 
-        let x = 10
-        let y = 20
+        // 1. arithmatic operators :- [+, - , * , /]
+        
+        document.writeln(" <h2> <b> Arithmatic Operators </b> </h2> <br>")
+        var x = 10 , y = 3
+        var sum = x + y;
+        document.write("sum =>",sum, "<br>")
+        console.log("sub =>", x + y) 
+        
+        var sub = x - y;
+        document.write("sub =>",sub, "<br>")
+        console.log("sub =>", x - y)
 
-        document.write("add=>",x+y,"<br>")
-        document.write("sub=>",x-y,"<br>")
-        document.write("mul=>",x*y,"<br>")
-        document.write("div=>",x/y,"<br>")
+        var mul = x * y;
+        document.write("mul =>",mul, "<br>")
+        console.log("sub =>", x * y) 
 
-        let equal = (x == y)? true:false
-        document.write("=",equal,"<br>")
+        var div = x / y;
+        document.write("div =>",div, "<br>")
+        console.log("sub =>", x / y) 
+        
+        // 2. comparison operators :- [< , > , <= , >= , == , === , !=]
+        
+        var a = 30 , b = 20
+        document.writeln(" <h2> <b> Comparison Operators </b> </h2> <br>")
+        document.writeln("If condition are match / not match than print => ",a<b,"<br>")
+        console.log(a<b)
+        document.writeln("If condition are match / not match than print => ",a>b,"<br>")
+        console.log(a>b)
+        document.writeln("If condition are match / not match than print => ",a<=b,"<br>")
+        console.log(a<=b)
+        document.writeln("If condition are match / not match than print => ",a>=b,"<br>")
+        console.log(a>=b)
+        document.writeln("If condition are match / not match than print => ",a==b,"<br>")
+        console.log(a == b)
+        document.writeln("If condition are match / not match than print => ",a===b,"<br>")
+        console.log(a === b)
+        document.writeln("If condition are match / not match than print => ",a!=b,"<br>")
+        console.log(a != b)
 
-        let a = 15,b = 4
+        // 3. logical operators :- [&& , || , !]
 
-        if(a>10 || b<5){
-            document.write("true")
-        }
+        var adult = 20
+        var teen = 15
 
+        document.writeln(" <h2> <b> Comparison Operators </b> </h2> <br>")
+
+        document.writeln("If condition are match / not match than print => ", adult >= 20 && teen <= 15, "<br>" )
+         console.log(adult > 20 && teen == 15)
+         // T T = true
+         // t f = f
+         // f t = f
+         // f f = f
+
+         document.writeln("If condition are match / not match than print => ",adult > 20 || teen >20, "<br>" )
+         console.log(adult > 20 || teen >20)
+        // T T = t
+         // t f = t
+         // f t = t
+         // f f = false
+
+         document.writeln("If condition are match / not match than print => ", teen != 18, "<br>" )
+         console.log( teen != 18)
+
+        //  condition is true than print false
+        // condition is false than print true
+
+        alert("WELCOME TO OPERATORS...!!!")
 
     </script>
 </body>

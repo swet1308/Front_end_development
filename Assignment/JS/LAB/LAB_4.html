@@ -1,75 +1,54 @@
+<!-- TASK-2 :-
+    > Create a JavaScript program using a switch statement to display the day of the week
+    based on the user input (e.g., 1 for Monday, 2 for Tuesday, etc.).
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAB_4</title>
-    <style>
-        p{
-            background: black;
-            color: white;
-            height: 50px;
-            width: 100%;
-        }
-    </style>
+    <title>SWITCH-CASE</title>
 </head>
 
 <body>
+    <Script>
+        // Prompt the user for a number (1-7)
+        let dayNumber = parseInt(prompt("Enter a number (1-7) to get the corresponding day of the week:"));
 
-    <h2>Enter a number (1-7) to get the day of the week</h2>
-    <input type="number" id="dayinput" min="1" max="7">
-    <button onclick="day()">click me</button>
-    <p id="output"></p>
+        let dayName;
 
-    <script>
-
-        document.write("Task 1<br>")
-
-        let x = 33
-        if (x >= 1) {
-            document.write("number is positive=>", x)
+        switch (dayNumber) {
+            case 1:
+                dayName = "Monday";
+                break;
+            case 2:
+                dayName = "Tuesday";
+                break;
+            case 3:
+                dayName = "Wednesday";
+                break;
+            case 4:
+                dayName = "Thursday";
+                break;
+            case 5:
+                dayName = "Friday";
+                break;
+            case 6:
+                dayName = "Saturday";
+                break;
+            case 7:
+                dayName = "Sunday";
+                break;
+            default:
+                dayName = "Invalid input. Please enter a number between 1 and 7.";
         }
-        else if (x == 0) {
-            document.write("number is zero=>", x)
-        }
-        else if (x <= -1) {
-            document.write("number is negative=>", x)
-        }
+        document.writeln(dayName)
+        
 
-        document.write("<br>Task 2<br>")
+    </Script>
 
-        function day() {
-            let input = parseInt(document.getElementById("dayinput").value)
-            let dayname;
-            switch (input) {
-                case 1:
-                    dayname = "Monday"
-                    break
-                case 2:
-                    dayname = "Tuesday"
-                    break
-                case 3:
-                    dayname = "Wednesday"
-                    break
-                case 4:
-                    dayname = "Thrusday"
-                    break
-                case 5:
-                    dayname = "Friday"
-                    break
-                case 6:
-                    dayname = "Saturday"
-                    break
-                case 7:
-                    dayname = "Sunday"
-                    break                    
-                default:
-                    dayname = "Invalid input! please enter 1 to 7 numbers only."
-            }
-            document.getElementById("output").innerHTML = dayname
-        }
-    </script>
 </body>
 
 </html>
