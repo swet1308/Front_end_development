@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    
+        let json = `[
+            {
+                "id" : 1,
+                "name" : "swet",
+                "course" : "front-end",
+                "email" : "swet.13@gmail.com"
+            },
+            {
+                "id" : 2,
+                "name" : "neer",
+                "course" : "front-end",
+                "email" : "neer.22@gmail.com"
+            },
+            {
+                "id" : 3,
+                "name" : "aayush",
+                "course" : "front-end",
+                "email" : "aayush.21@gmail.com"
+            },
+            {
+                "id" : 4,
+                "name" : "harsh",
+                "course" : "front-end",
+                "email" : "harsh.1@gmail.com"
+            },
+            {
+                "id" : 5,
+                "name" : "shubham",
+                "course" : "front-end",
+                "email" : "shubham.55@gmail.com"
+            },
+            {
+                "id" : 6,
+                "name" : "heet",
+                "course" : "front-end",
+                "email" : "heet.66@gmail.com"
+            },
+            {
+                "id" : 7,
+                "name" : "yash",
+                "course" : "front-end",
+                "email" : "yash.80@gmail.com"
+            },
+            {
+                "id" : 8,
+                "name" : "nirav",
+                "course" : "front-end",
+                "email" : "nirav.66@gmail.com"
+            },
+            {
+                "id" : 9,
+                "name" : "vasu",
+                "course" : "front-end",
+                "email" : "vasu.110@gmail.com"
+            },
+            {
+                "id" : 10,
+                "name" : "smit",
+                "course" : "front-end",
+                "email" : "smit.100@gmail.com"
+            }
+        ]`
+
+        let objdata = JSON.parse(json)
+        for (let user of objdata){
+            console.log(user)
+            document.writeln("id =>",user.id,"<br>","name =>",user.name,"<br>","course =>",user.course,"<br>","email =>",user.email,"<br>","<br>")
+        }
+
+        // obj => json
+        let object = [
+            {
+                id : 1,
+                name : "swet",
+                course : "front-end",
+                email : "swet.13@gmail.com"
+            },
+            {
+                id : 2,
+                name : "neer",
+                course : "front-end",
+                email : "neer.22@gmail.com"
+            },
+            {
+                id : 3,
+                name : "aayush",
+                course : "front-end",
+                email : "aayush.10@gmail.com"
+            },
+            {
+                id : 4,
+                name : "harsh",
+                course : "front-end",
+                email : "harsh.1@gmail.com"
+            },
+            {
+                id : 5,
+                name : "shubham",
+                course : "front-end",
+                email : "shubham.55@gmail.com"
+            },
+            {
+                id : 6,
+                name : "heet",
+                course : "front-end",
+                email : "heet.66@gmail.com"
+            },
+            {
+                id : 7,
+                name : "yash",
+                course : "front-end",
+                email : "yash.80@gmail.com"
+            },
+            {
+                id : 8,
+                name : "nirav",
+                course : "front-end",
+                email : "nirav.66@gmail.com"
+            },
+            {
+                id : 9,
+                name : "vasu",
+                course : "front-end",
+                email : "vasu.110@gmail.com"
+            },
+            {
+                id : 10,
+                name : "smit",
+                course : "front-end",
+                email : "smit.100@gmail.com"
+            }
+        ]
+
+        let data = JSON.stringify(object)
+        console.log(data)
+        document.writeln(data)
+
+    </script>
+</body>
+</html>
